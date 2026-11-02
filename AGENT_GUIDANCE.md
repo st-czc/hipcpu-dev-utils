@@ -3,6 +3,15 @@
 This file is the entry point for HIP CPU backend work. All paths are relative
 to the super-project root.
 
+## Global instructions
+
+Limit the amount of comments you put in the code to a strict minimum. You should almost never add comments, except sometimes on non-trivial code, function definitions if the arguments aren't self-explanatory, and class definitions and their members.
+
+Do not remove existing comments unless they are directly related to what you are changing.
+
+The repository is very big and so it isn't advised to blindly run rg or grep commands without specifying a narrow set of directories to search. When local text search via shell is necessary, prefer rg over grep as it is faster.
+
+
 ## Layout
 
 - `compiler/llvm-project` — the main LLVM and Clang compiler. It is based on an
