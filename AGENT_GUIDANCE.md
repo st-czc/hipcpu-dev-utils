@@ -9,7 +9,7 @@ Limit the amount of comments you put in the code to a strict minimum. You should
 
 Do not remove existing comments unless they are directly related to what you are changing.
 
-The repository is very big and so it isn't advised to blindly run rg or grep commands without specifying a narrow set of directories to search. When local text search via shell is necessary, prefer rg over grep as it is faster.
+The repository is very big and so it isn't advised to blindly run rg or grep commands without specifying a narrow set of directories to search.
 
 
 ## Layout
@@ -29,6 +29,13 @@ The repository is very big and so it isn't advised to blindly run rg or grep com
 - `rocm-systems/projects/clr` — the HIP runtime. The CPU backend code is in
   `clr/rocclr/device/cpu`.
 - `hipcpu-dev-utils/hip-tests` — the HIP unit-test harness.
+
+## Sub-project docs
+
+Read the matching doc before working under these paths:
+
+- `compiler/hipcpu-passes` — [subprojects/hipcpu-passes.md](subprojects/hipcpu-passes.md)
+- `rocm-systems/projects/clr` — [subprojects/clr.md](subprojects/clr.md)
 
 ## Compilation flow
 
